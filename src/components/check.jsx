@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState} from 'react';
 import '../style.css'
 import axios from 'axios';
 import url from '../baseurl'
@@ -10,9 +10,7 @@ function CheckForm() {
 
 
   const [rollno, setRollno] = useState(null);
-    const [name,setName] = useState(null);
-    const [dob,setDob] = useState(null);
-    const [address,setAddress] = useState(null);
+    
 
 const handleInputChange = async (e) => {
         e.preventDefault();
@@ -50,7 +48,7 @@ const handleInputChange = async (e) => {
               
           </div>
           <div class="footer">
-              <button type="submit" onClick={()=>handleSubmit()} class="btn">Register</button>
+              <button type="submit" onClick={()=>handleSubmit()} class="btn">Submit</button>
           </div>
       </div>      
     )       

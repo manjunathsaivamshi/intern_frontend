@@ -50,7 +50,7 @@ const handleInputChange = async (e) => {
               
           </div>
           <div class="footer">
-              <button type="submit" onClick={()=>handleSubmit()} class="btn">Register</button>
+              <button type="submit" onClick={()=>handleSubmit()} class="btn">Submit</button>
           </div>
       </div>      
     )       
